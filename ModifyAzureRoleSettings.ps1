@@ -5,14 +5,14 @@ Connect-AzureAD
 $Tenant = Get-AzureADTenantDetail
 $TenantID = $Tenant.ObjectId
 
-# Get Role Assignments for Enterprise subscription / Number of assignments per subscription / Not needed in order to run the script
+# Get Role Assignments for "Subscription 1" subscription / Number of assignments per subscription / This is not needed in order to run the script
 #$RoleAssignments = Get-AzureADMSPrivilegedRoleAssignment –ProviderId AzureResources –ResourceId $Resource.Id
 
 # Get all subscriptions
 $Subscriptions = Get-AzureADMSPrivilegedResource -ProviderId AzureResources -Filter "Type eq 'subscription'"
 
 # Get particular resource [in this case Enterprise Subscription]
-$Resource = Get-AzureADMSPrivilegedResource -ProviderId AzureResources -Filter "DisplayName eq 'Enterprise'"
+$Resource = Get-AzureADMSPrivilegedResource -ProviderId AzureResources -Filter "DisplayName eq 'Subscription 1'"
 
 #####################################################################################
 
