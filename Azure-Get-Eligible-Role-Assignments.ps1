@@ -14,7 +14,7 @@ $TenantId = "xxxxxxxxxx" # Add your Tenant Id here
 Connect-AzAccount -Tenant $TenantId
 
 # Get all enabled subscriptions
-$Subscriptions = Get-AzSubscription| Where-Object {$_.State -eq "Enabled"}
+$Subscriptions = Get-AzSubscription | Where-Object {$_.State -eq "Enabled"}
 
 # Get All Eligible Azure Assignments
 $EligibleAzureUserData = @()
