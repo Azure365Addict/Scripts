@@ -1,0 +1,5 @@
+GroupName,Region,Country,City,Description
+Devices_From_EU_Portugal_Lisbon,EU,Portugal,Lisbon,Devices from Lisbon
+Devices_From_EU_Spain_Madrid,EU,Spain,Madrid,Devices from Madrid
+Devices_From_EU_Germany_Berlin,EU,Germany,Berlin,Devices from Berlin
+Devices_From_EU_France_Paris,EU,France,Paris,Devices from Paris
