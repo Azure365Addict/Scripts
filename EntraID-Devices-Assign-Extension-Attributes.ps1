@@ -1,13 +1,12 @@
 ﻿# Description:
-# Script assigns extension attributes for Entra ID registered devices.
+# Script assigns extension attributes for Entra ID devices.
 #
 # Requirements:
 # - Microsoft.Graph.Beta PowerShell module
 # - Directory.ReadWrite.All and Device.Read.All permissions
 
-# This script is https://github.com/a365junkie/Scripts/EntraID-Devices-Assign-Extension-Attributes.ps1
-# See https://a365junkie.com/ for more information.
-# V1.0 23-October-2024
+# For detailed script execution:: https://github.com/Azure365Addict/Scripts/edit/main/EntraID-Devices-Assign-Extension-Attributes.ps1
+# V1.0 24-January-2025
 
 # Connect Microsoft Graph
 $Scopes = "Directory.ReadWrite.All, Device.Read.All"
@@ -41,4 +40,6 @@ $Attributes = @{
                 extensionAttribute3 = "" }
                 } | ConvertTo-Json
       
-Update-MgBetaDevice -DeviceId $Device.Id -BodyParameter $Attributes             
+Update-MgBetaDevice -DeviceId $Device.Id -BodyParameter $Attributes
+
+Write-Host `n"*** Please visit " -NoNewline -ForegroundColor Green; Write-Host "azure365addict.com" -ForegroundColor Yellow -NoNewline; Write-Host " to get access to the latest PowerShell related blog entries. ***" -ForegroundColor Green       
