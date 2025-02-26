@@ -1,15 +1,20 @@
-﻿# Description:
-# Script connects to Microsoft Graph and search for apps with specific permissions
-#
-# Requirements:
-# - Microsoft Graph PowerShell Module
+<#
+Description:
+Script connects to Microsoft Graph and search for apps with specific permissions
 
-# This script is https://github.com/Azure365Addict/Scripts/edit/main/Azure-Get-Apps-With-Specific-Permissions.ps1
-# See https://365ScriptJunkie.com/ for more information.
-# V1.0 26-February-2025
+Requirements:
+- Microsoft.Graph PowerShell module
+
+Version:
+1.0
+
+More details:
+https://azure365addict.com/2025/02/25/migrating-from-exchange-web-services-to-microsoft-graph-a-practical-guide/
+#>
 
 # Connect to Graph
-Connect-MgGraph -Scopes "Application.Read.All, Directory.Read.All"
+$Scopes = "Application.Read.All, Directory.Read.All"
+Connect-MgGraph -Scopes $Scopes
 
 # Specify permissions
 $permissionsToCheck = @("EWS.AccessAsUser.All", "full_access_as_app")
@@ -18,6 +23,7 @@ $permissionsToCheck = @("EWS.AccessAsUser.All", "full_access_as_app")
 $apps = Get-MgServicePrincipal -All
 $results = @()
 
+# Loop through all Apps
 foreach ($app in $apps) {
     $permissions = Get-MgServicePrincipalOauth2PermissionGrant -ServicePrincipalId $app.Id
     foreach ($permission in $permissions) {
