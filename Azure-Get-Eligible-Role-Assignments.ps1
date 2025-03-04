@@ -6,7 +6,7 @@
 # - Az.Resources PowerShell module
 
 # This script is https://github.com/365ScriptJunkie/Scripts/Azure-Get-Eligible-Role-Assignments.ps1
-# See https://365ScriptJunkie.com/ for more information.
+# See https://azure365addict.com/2025/03/04/auditing-azure-role-assignments-with-powershell/ for more information.
 # V1.0 22-October-2024
 
 # Connect Az
