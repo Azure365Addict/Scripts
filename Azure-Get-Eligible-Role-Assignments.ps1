@@ -1,15 +1,13 @@
-<﻿# 
-
+<#
 Description:
-# Script connects to Az and gets all users with Eligible roles assigned within all (Enabled) subscriptions.
-#
-# Requirements:
-# - Az.Accounts PowerShell module
-# - Az.Resources PowerShell module
+Script connects to Az and gets all users with Eligible roles assigned within all (Enabled) subscriptions
+
+Requirements:
+- Az.Accounts PowerShell module
+- Az.Resources PowerShell module
 
 More details:
 https://azure365addict.com/2025/03/04/auditing-azure-role-assignments-with-powershell/
-
 #>
 
 # Connect Az
