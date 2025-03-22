@@ -1,13 +1,17 @@
-﻿# Description:
-# Script remove users in bulk.
-#
-# Requirements:
-# - Microsoft.Graph PowerShell module
-# - User.ReadWrite.All permission
+<#
+Description:
+Script removes users in bulk.
 
-# This script is https://github.com/a365junkie/Scripts/EntraID-Bulk-Remove-Users.ps1
-# See https://a365junkie.com/ for more information.
-# V1.0 23-October-2024
+Requirements:
+- Microsoft.Graph PowerShell module
+- User.ReadWrite.All permission
+
+Version:
+1.0
+
+More details:
+https://azure365addict.com/2025/03/22/bulk-user-deletion-in-entra-id-with-powershell/
+#>
 
 # Connect Microsoft Graph
 $Scopes = "User.ReadWrite.All "
@@ -35,3 +39,5 @@ foreach ($User in $Users)
 
 
         }
+
+Write-Host `n"*** Please visit " -NoNewline -ForegroundColor Green; Write-Host "azure365addict.com" -ForegroundColor Yellow -NoNewline; Write-Host " to get access to the latest PowerShell related blog entries. ***" -ForegroundColor Green
