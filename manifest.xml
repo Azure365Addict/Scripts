@@ -12,6 +12,7 @@
   <DisplayName DefaultValue="ACCO Signature"/>
   <Description DefaultValue="Insert your personalized ACCO email signature."/>
   <SupportUrl DefaultValue="https://acccosignature.azurewebsites.net/support"/>
+
   <Permissions>ReadWriteItem</Permissions>
 
   <Hosts>
@@ -26,7 +27,7 @@
 
   <Resources>
     <bt:Urls>
-      <bt:Url id="taskpaneUrl" DefaultValue="https://acccosignature.azurewebsites.net/api/static/taskpane.html"/>
+      <bt:Url id="taskpaneUrl" DefaultValue="https://azure365addict.github.io/outlook-addin/taskpane.html"/>
     </bt:Urls>
     <bt:ShortStrings>
       <bt:String id="groupLabel" DefaultValue="ACCO Tools"/>
@@ -63,7 +64,7 @@
     </Hosts>
     <Resources>
       <bt:Urls>
-        <bt:Url id="taskpaneUrl" DefaultValue="https://acccosignature.azurewebsites.net/api/static/taskpane.html"/>
+        <bt:Url id="taskpaneUrl" DefaultValue="https://azure365addict.github.io/outlook-addin/taskpane.html"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="groupLabel" DefaultValue="ACCO Tools"/>
