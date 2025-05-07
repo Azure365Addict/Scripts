@@ -12,7 +12,6 @@
   <DisplayName DefaultValue="ACCO Signature"/>
   <Description DefaultValue="Insert your personalized ACCO email signature."/>
   <SupportUrl DefaultValue="https://acccosignature.azurewebsites.net/support"/>
-
   <Permissions>ReadWriteItem</Permissions>
 
   <Hosts>
@@ -26,11 +25,6 @@
   </Requirements>
 
   <Resources>
-    <bt:Images>
-      <bt:Image id="icon16" DefaultValue="https://acccosignature.azurewebsites.net/api/static/assets/icon-16.png"/>
-      <bt:Image id="icon32" DefaultValue="https://acccosignature.azurewebsites.net/api/static/assets/icon-32.png"/>
-      <bt:Image id="icon80" DefaultValue="https://acccosignature.azurewebsites.net/api/static/assets/icon-80.png"/>
-    </bt:Images>
     <bt:Urls>
       <bt:Url id="taskpaneUrl" DefaultValue="https://acccosignature.azurewebsites.net/api/static/taskpane.html"/>
     </bt:Urls>
@@ -58,11 +52,6 @@
                   <Title resid="buttonLabel"/>
                   <Description resid="buttonTooltip"/>
                 </Supertip>
-                <Icon>
-                  <bt:Image size="16" resid="icon16"/>
-                  <bt:Image size="32" resid="icon32"/>
-                  <bt:Image size="80" resid="icon80"/>
-                </Icon>
                 <Action xsi:type="ShowTaskpane">
                   <SourceLocation resid="taskpaneUrl"/>
                 </Action>
@@ -73,11 +62,6 @@
       </Host>
     </Hosts>
     <Resources>
-      <bt:Images>
-        <bt:Image id="icon16" DefaultValue="https://acccosignature.azurewebsites.net/api/static/assets/icon-16.png"/>
-        <bt:Image id="icon32" DefaultValue="https://acccosignature.azurewebsites.net/api/static/assets/icon-32.png"/>
-        <bt:Image id="icon80" DefaultValue="https://acccosignature.azurewebsites.net/api/static/assets/icon-80.png"/>
-      </bt:Images>
       <bt:Urls>
         <bt:Url id="taskpaneUrl" DefaultValue="https://acccosignature.azurewebsites.net/api/static/taskpane.html"/>
       </bt:Urls>
