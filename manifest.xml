@@ -12,7 +12,6 @@
   <DisplayName DefaultValue="ACCO Signature"/>
   <Description DefaultValue="Insert your personalized ACCO email signature."/>
   <SupportUrl DefaultValue="https://acccosignature.azurewebsites.net/support"/>
-  <IconUrl DefaultValue="https://acccosignature.azurewebsites.net/api/static/assets/icon-32.png"/>
 
   <Permissions>ReadWriteItem</Permissions>
 
