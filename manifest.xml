@@ -23,6 +23,14 @@
     </Sets>
   </Requirements>
 
+  <FormSettings>
+    <Form xsi:type="ItemEdit">
+      <DesktopSettings>
+        <SourceLocation DefaultValue="https://acccosignature.azurewebsites.net/api/static/taskpane.html"/>
+      </DesktopSettings>
+    </Form>
+  </FormSettings>
+
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides/1.0"
                     xsi:type="VersionOverridesV1_0"
                     Version="1.0">
