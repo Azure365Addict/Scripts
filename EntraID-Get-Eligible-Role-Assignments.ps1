@@ -5,10 +5,6 @@
 # - Microsoft.Graph.Identity.Governance PowerShell module
 # - RoleEligibilitySchedule.Read.Directory and RoleManagement.Read.Directory permissions
 
-# This script is https://github.com/365ScriptJunkie/Scripts/EntraID-Get-Eligible-Role-Assignments.ps1
-# See https://365ScriptJunkie.com/ for more information.
-# V1.0 22-October-2024
-
 # Connect Microsoft Graph
 $Scopes = "RoleEligibilitySchedule.Read.Directory, RoleManagement.Read.Directory"
 Connect-MgGraph -Scopes $Scopes
