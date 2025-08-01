@@ -15,12 +15,10 @@
 .EXAMPLE
     ./Exchange-Find-Mailbox-Folder.ps1 -Mailbox "user@contoso.com" -FolderName "Deleted"
 
-.REQUIREMENTS
-    - ExchangeOnlineManagement module
-
-.MORE DETAILS
-https://azure365addict.com/2025/08/01/investigating-missing-mailbox-folders-in-exchange-online-with-powershell/
-
+.NOTES
+    Requires the ExchangeOnlineManagement module.
+    For full details, see:
+    https://azure365addict.com/2025/08/01/investigating-missing-mailbox-folders-in-exchange-online-with-powershell/
 #>
 
 param (
