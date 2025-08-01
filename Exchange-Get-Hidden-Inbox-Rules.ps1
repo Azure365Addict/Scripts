@@ -1,4 +1,4 @@
-﻿<#
+<#
 Description:
 This PowerShell script scans all user mailboxes in Exchange Online to identify and export hidden inbox rules — often overlooked yet potentially risky. 
 It filters out default system rules, flags broken entries, and formats descriptions for CSV export
