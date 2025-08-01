@@ -21,7 +21,7 @@
     
     For full details, see:
 
-    https://azure365addict.com/2025/08/01/investigating-missing-mailbox-folders-in-exchange-online-with-powershell/
+    https://azure365addict.com/2025/08/03/investigating-missing-mailbox-folders-in-exchange-online-with-powershell/
 #>
 
 param (
