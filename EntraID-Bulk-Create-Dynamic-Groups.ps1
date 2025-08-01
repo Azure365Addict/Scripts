@@ -5,10 +5,6 @@
 # - Microsoft.Graph PowerShell module
 # - Group.ReadWrite.All or Directory.ReadWRite.All permissions
 
-# This script is https://github.com/a365junkie/Scripts/EntraID-Bulk-Create-Dynamic-Groups.ps1
-# See https://a365junkie.com/ for more information.
-# V1.0 23-October-2024
-
 # Connect Microsoft Graph
 $Scopes = "Group.ReadWrite.All"
 Connect-MgGraph -Scopes $Scopes
