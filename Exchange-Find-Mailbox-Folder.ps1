@@ -16,8 +16,11 @@
     ./Exchange-Find-Mailbox-Folder.ps1 -Mailbox "user@contoso.com" -FolderName "Deleted"
 
 .NOTES
-    Requires the ExchangeOnlineManagement module.
+    Requirements:
+    - ExchangeOnlineManagement module
+    
     For full details, see:
+
     https://azure365addict.com/2025/08/01/investigating-missing-mailbox-folders-in-exchange-online-with-powershell/
 #>
 
