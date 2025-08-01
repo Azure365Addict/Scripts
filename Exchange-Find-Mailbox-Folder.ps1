@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
     Finds mailbox folders matching a specified name and reports folder statistics.
 
