@@ -13,7 +13,7 @@
     A string to match against the folder path (e.g., "Deleted", "Marketing", etc.)
 
 .EXAMPLE
-    ./Exchange-Find-Folder.ps1 -Mailbox "user@contoso.com" -FolderName "Deleted"
+    ./Exchange-Find-Mailbox-Folder.ps1 -Mailbox "user@contoso.com" -FolderName "Deleted"
 
 .REQUIREMENTS
     - ExchangeOnlineManagement module
