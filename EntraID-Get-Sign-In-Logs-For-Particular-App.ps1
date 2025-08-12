@@ -30,11 +30,11 @@ The full file path for the exported CSV. Default: ".\SignInLogs_Win10_Unmanaged.
 
 .EXAMPLE
 # Export last 30 days of sign-ins for two applications by ID
-.\GetSignInLogsForParticularApp.ps1 -AppIds "00000002-0000-0ff1-ce00-000000000000","00000003-0000-0000-c000-000000000000"
+.\EntraID-Get-Sign-In-Logs-For-Particular-App.ps1 -AppIds "00000002-0000-0ff1-ce00-000000000000","00000003-0000-0000-c000-000000000000"
 
 .EXAMPLE
 # Export last 7 days of sign-ins for Microsoft Teams by name
-.\GetSignInLogsForParticularApp.ps1 -AppNames "Microsoft Teams" -DaysBack 7 -OutCsv "C:\Temp\Teams_Unmanaged_Win10.csv"
+.\EntraID-Get-Sign-In-Logs-For-Particular-App.ps1 -AppNames "Microsoft Teams" -DaysBack 7 -OutCsv "C:\Temp\Teams_Unmanaged_Win10.csv"
 
 .NOTES
 Requires: Microsoft Graph PowerShell SDK v2, AuditLog.Read.All permission
@@ -130,4 +130,5 @@ $rows = $all | ForEach-Object {
 $rows | Export-Csv -Path $OutCsv -NoTypeInformation -Encoding UTF8
 
 Write-Host "Done. Exported $($rows.Count) rows to $OutCsv"
+
 
