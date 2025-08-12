@@ -44,7 +44,7 @@ Compatible with: Windows PowerShell 5.1 and PowerShell 7+
 param(
   [string[]] $AppIds   = @("00000002-0000-0ff1-ce00-000000000000"),  # App IDs here
   [string[]] $AppNames = @(),                                        # Optional names
-  [int]      $DaysBack = 1,
+  [int]      $DaysBack = 30,
   [string]   $OutCsv   = ".\SignInLogs_Win10_Unmanaged.csv"
 )
 
@@ -127,4 +127,5 @@ $rows = $all | ForEach-Object {
 
 # Export results
 $rows | Export-Csv -Path $OutCsv -NoTypeInformation -Encoding UTF8
+
 Write-Host "Done. Exported $($rows.Count) rows to $OutCsv"
