@@ -39,6 +39,7 @@ The full file path for the exported CSV. Default: ".\SignInLogs_Win10_Unmanaged.
 .NOTES
 Requires: Microsoft Graph PowerShell SDK v2, AuditLog.Read.All permission
 Compatible with: Windows PowerShell 5.1 and PowerShell 7+
+More details: https://azure365addict.com/2025/08/12/export-entra-id-sign-in-logs-for-specific-apps-with-powershell-microsoft-graph/
 #>
 
 param(
@@ -129,3 +130,4 @@ $rows = $all | ForEach-Object {
 $rows | Export-Csv -Path $OutCsv -NoTypeInformation -Encoding UTF8
 
 Write-Host "Done. Exported $($rows.Count) rows to $OutCsv"
+
