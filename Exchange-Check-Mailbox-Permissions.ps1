@@ -28,7 +28,7 @@
     - Permissions to run Get-Mailbox, Get-MailboxPermission, Get-RecipientPermission
 
 .LINK
-    https://azure365addict.com/
+    https://azure365addict.com/2025/08/28/checking-shared-mailbox-permissions-in-exchange-online-with-powershell/
 
 #>
 
@@ -192,3 +192,4 @@ if ($Mode -eq "Mailbox") {
 } else {
     Get-MailboxPermissionsForUser -User $Identity
 }
+
