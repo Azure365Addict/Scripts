@@ -36,8 +36,8 @@ If you're a:
 ## 📬 Stay Connected
 
 - 🧠 Read the blog: [https://azure365addict.com](https://azure365addict.com)  
-- 🧰 Browse tools and code: [This GitHub profile](https://github.com/Azure365Addict)  
-- 🐦 Follow updates on [Twitter/X] *(optional)*  
+- 🧰 Browse tools and code: [This GitHub profile](https://github.com/Azure365Addict)
+- 🐦 Follow updates on [Twitter/X](https://x.com/Azure365Addict)
 - ☁️ Contribute or open issues — feedback welcome!
 
 ---
