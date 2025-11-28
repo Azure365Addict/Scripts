@@ -36,7 +36,7 @@
     - If using cert-based auth: App registration + certificate + necessary Exchange permissions
 
 .LINK
-    https://azure365addict.com/
+    https://azure365addict.com/2025/11/30/generating-a-mailbox-properties-report-in-exchange-online-with-powershell/
 #>
 
 param (
@@ -184,3 +184,4 @@ foreach ($Mailbox in $Mailboxes) {
 Log-Event "Report generated: $OutputCSV"
 Disconnect-ExchangeOnline -Confirm:$false
 Stop-Transcript
+
