@@ -32,19 +32,6 @@
 
 #>
 
-<#
-.SYNOPSIS
-Check shared mailbox permissions in Exchange Online.
-
-.DESCRIPTION
-Two modes:
-- Mailbox: who has FullAccess / SendAs / SendOnBehalf on a shared mailbox.
-- User:   which shared mailboxes a user has FullAccess / SendAs / SendOnBehalf.
-
-.REQUIREMENTS
-Connect-ExchangeOnline (EXO V3 recommended for Get-EXOMailbox speed).
-#>
-
 param(
     [Parameter(Mandatory=$true)]
     [ValidateSet("Mailbox","User")]
@@ -192,4 +179,5 @@ if ($Mode -eq "Mailbox") {
 } else {
     Get-MailboxPermissionsForUser -User $Identity
 }
+
 
