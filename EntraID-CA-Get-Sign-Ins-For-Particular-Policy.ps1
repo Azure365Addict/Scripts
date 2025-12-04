@@ -45,6 +45,8 @@
 
 .NOTES
     Requires Az.Accounts + Az.OperationalInsights modules.
+.LINK
+    https://azure365addict.com/2025/12/04/reporting-conditional-access-policy-activity-from-sign-in-logs/
 #>
 
 [CmdletBinding()]
@@ -225,3 +227,4 @@ if (-not $ExportCSV) {
 $rows | Export-Csv -Path $OutputPath -NoTypeInformation -Encoding UTF8
 
 Write-Host "`nFull report exported to: $OutputPath" -ForegroundColor Cyan
+
