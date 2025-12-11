@@ -23,7 +23,8 @@
     ./Exchange-Check-Mailbox-Permissions.ps1 -Mode "User" -Identity "user@contoso.com"
     Lists all shared mailboxes where the user has Full Access, Send As, or Send on Behalf rights.
 
-.REQUIREMENTS
+.NOTES
+    Requirements:
     - Exchange Online PowerShell (Connect-ExchangeOnline)
     - Permissions to run Get-Mailbox, Get-MailboxPermission, Get-RecipientPermission
 
@@ -179,5 +180,6 @@ if ($Mode -eq "Mailbox") {
 } else {
     Get-MailboxPermissionsForUser -User $Identity
 }
+
 
 
