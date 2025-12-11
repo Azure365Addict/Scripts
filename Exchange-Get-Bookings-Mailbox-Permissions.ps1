@@ -20,6 +20,9 @@
 
 .NOTES
     Requires ExchangeOnlineManagement module.
+
+.LINK
+    https://azure365addict.com/2025/12/11/why-your-microsoft-bookings-page-suddenly-has-no-owner-and-how-to-fix-it-with-powershell/
 #>
 
 $results = Get-Mailbox -RecipientTypeDetails SchedulingMailbox | ForEach-Object {
@@ -60,4 +63,5 @@ $results = Get-Mailbox -RecipientTypeDetails SchedulingMailbox | ForEach-Object 
 
 $results | Format-Table
 # Optional: export to CSV
+
 # $results | Export-Csv "Bookings-Scheduling-Mailboxes.csv" -NoTypeInformation -Encoding UTF8
