@@ -9,12 +9,12 @@
     fields so that orphaned Booking pages can be identified easily.
 
 .EXAMPLE
-    .\Get-BookingsMailboxPermissions.ps1
+    .\Exchange-Get-Bookings-Mailbox-Permissions.ps1
 
     Lists all Scheduling mailboxes along with assigned permissions.
 
 .EXAMPLE
-    .\Get-BookingsMailboxPermissions.ps1 | Export-Csv "BookingsMailboxes.csv" -NoTypeInformation
+    .\Exchange-Get-Bookings-Mailbox-Permissions.ps1 | Export-Csv "BookingsMailboxes.csv" -NoTypeInformation
 
     Exports the results into a CSV file for further analysis.
 
@@ -65,3 +65,4 @@ $results | Format-Table
 # Optional: export to CSV
 
 # $results | Export-Csv "Bookings-Scheduling-Mailboxes.csv" -NoTypeInformation -Encoding UTF8
+
