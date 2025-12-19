@@ -73,6 +73,10 @@
 
     Script name:
     EntraID-Get-User-Authentication-Methods.ps1
+
+.LINK
+https://azure365addict.com/2025/12/19/reporting-entra-id-authentication-methods-at-scale-with-powershell/ 
+
 #>
 
 [CmdletBinding()]
@@ -384,4 +388,5 @@ if ($UserPrincipalName) {
 
 Disconnect-MgGraph -ErrorAction SilentlyContinue | Out-Null
 Write-Log -Message "Script finished." -Level "INFO"
+
 
