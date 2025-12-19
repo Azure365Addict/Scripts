@@ -49,17 +49,15 @@
     Intended for ad-hoc admin execution and testing.
 
 .EXAMPLE
-    .\EntraID-Get_User_Authentication_Methods.ps1
+    .\EntraID-Get-User-Authentication-Methods.ps1
     Runs in app-only mode and exports authentication methods for all users.
 
 .EXAMPLE
-    .\EntraID-Get_User_Authentication_Methods.ps1 -Interactive
+    .\EntraID-Get-User-Authentication-Methods.ps1 -Interactive
     Runs interactively using the signed-in admin account.
 
 .EXAMPLE
-    .\EntraID-Get_User_Authentication_Methods.ps1 `
-        -UserPrincipalName john.doe@contoso.com `
-        -Interactive
+    .\EntraID-Get-User-Authentication-Methods.ps1 -UserPrincipalName john.doe@contoso.com -Interactive
     Runs interactively and exports authentication methods for a single user.
 
 .NOTES
@@ -74,7 +72,7 @@
         * Delegated permissions for the signed-in user
 
     Script name:
-    EntraID-Get_User_Authentication_Methods.ps1
+    EntraID-Get-User-Authentication-Methods.ps1
 #>
 
 [CmdletBinding()]
@@ -386,3 +384,4 @@ if ($UserPrincipalName) {
 
 Disconnect-MgGraph -ErrorAction SilentlyContinue | Out-Null
 Write-Log -Message "Script finished." -Level "INFO"
+
