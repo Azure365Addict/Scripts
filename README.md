@@ -1,6 +1,6 @@
 # ⚡ Azure 365 Addict
 
-Welcome to **Azure 365 Addict** — a blog and collection of tools for automating and managing Microsoft 365 environments using PowerShell, Graph API, and more.
+Welcome to **Azure 365 Addict** - a blog and collection of tools for automating and managing Microsoft 365 environments using PowerShell, Graph API, and more.
 
 🔗 **Visit the blog**: [https://azure365addict.com](https://azure365addict.com)
 
