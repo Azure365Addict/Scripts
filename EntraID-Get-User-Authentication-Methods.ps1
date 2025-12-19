@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
     Exports Microsoft Entra ID user authentication methods to CSV using Microsoft Graph.
 
@@ -182,7 +182,6 @@ function Connect-ToGraph {
     Write-Log -Message ("Connected to tenant {0} as {1}" -f $ctx.TenantId, $ctx.Account) -Level "INFO"
 }
 
-# ✅ This was missing in your version
 Connect-ToGraph -Interactive:$Interactive
 
 # ============================================================
