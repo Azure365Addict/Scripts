@@ -58,6 +58,9 @@
 
     Script name:
     Exchange-Report-EASDevices-OlderClientVersion.ps1
+
+.LINK
+https://azure365addict.com/2025/12/22/reporting-legacy-exchange-activesync-clients-after-mc1197103/
 #>
 
 [CmdletBinding()]
@@ -191,4 +194,5 @@ $results |
     Export-Csv -Path $OutputPath -NoTypeInformation -Encoding UTF8 -Delimiter $Delimiter
 
 Write-Host "Report exported to: $OutputPath" -ForegroundColor Green
+
 Write-Host ("Rows exported: {0}" -f $results.Count) -ForegroundColor Green
