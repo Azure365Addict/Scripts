@@ -35,6 +35,9 @@ Before running:
 
 .EXAMPLE
 .\Get-MailReadReport.ps1 -SenderAddress sender@contoso.com -StartDate 2026-01-14 -EndDate 2026-01-16 -Report
+
+.LINK
+    https://azure365addict.com/2026/03/06/exchange-online-mail-read-status-report/
 #>
 
 [CmdletBinding()]
@@ -426,4 +429,5 @@ if ($Report -and $CsvPath) {
     if (Test-Path $CsvSummaryPath) {
         Write-Host "Summary CSV saved to: $CsvSummaryPath" -ForegroundColor Cyan
     }
+
 }
