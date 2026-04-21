@@ -247,11 +247,15 @@ function Get-AppCredentialUsage {
             [Parameter(Mandatory)]
             [string]$CredentialType,
 
-            [Parameter(Mandatory)]
-            [array]$SignIns
+            [AllowEmptyCollection()]
+            [array]$SignIns = @()
         )
 
         if ([string]::IsNullOrWhiteSpace($CredentialId)) {
+            return @()
+        }
+
+        if (-not $SignIns -or $SignIns.Count -eq 0) {
             return @()
         }
 
@@ -329,6 +333,10 @@ function Get-AppCredentialUsage {
     Write-Host "Since (UTC) : $since"
     Write-Host "Sign-ins    : $($signIns.Count)"
     Write-Host ""
+
+    if ($signIns.Count -eq 0) {
+        Write-Warning "No service principal sign-in events found for this app in the last $DaysBack days."
+    }
 
     $targetCredentialId = $null
     $targetCredentialType = $null
